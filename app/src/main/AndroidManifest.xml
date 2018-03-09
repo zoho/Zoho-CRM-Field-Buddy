@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sruthi_4404.zcrm_field_buddy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission  android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:supportsRtl">
+
+        <activity
+            android:name="com.example.sruthi_4404.zcrm_field_buddy.MapsActivity"
+            android:label="@string/title_activity_maps"/>
+        <activity
+            android:name="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.list.ContactListActivity"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.RecordViewHandler"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.list.TodaysAppointmentListActivity"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.list.CompletedAppointmentsListActivity"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.list.JobCardsListActivity"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.AppointmentsViewHandler"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.JobCardsViewHandler"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <activity android:name="com.example.sruthi_4404.zcrm_field_buddy.JobCardsCreation"
+            android:parentActivityName="com.example.sruthi_4404.zcrm_field_buddy.MainActivity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.sruthi_4404.zcrm_field_buddy.MainActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

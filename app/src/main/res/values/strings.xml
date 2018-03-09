@@ -1,0 +1,42 @@
+
+<resources>
+    <string name="app_name">Zylker Field Buddy</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="url_scheme">zohosdk</string>
+    // zoho
+    <string name="accounts_url">https://accounts.zoho.com</string>
+    <string name="c_id">1000.4SMTEZGRQ8U481228UDX0Z6SFHWM32</string>
+    <string name="c_secret">d202ec643d2576ce6afa9e5aacc8dbaaf8a604f49b</string>
+    <string name="redir_url">zohosdk://</string>
+
+    <!--<string name="url_scheme">localzcrmsdk</string>
+    // zoho
+    <string name="accounts_url">https://accounts.localzoho.com</string>
+    <string name="c_id">1000.A1YPEEWKA7S3093496WZQOGJSANRZG</string>
+    <string name="c_secret">a8b388eff7a0704ef082092b71517978d87c24de36</string>
+    <string name="redir_url">localzcrmsdk://</string>-->
+
+    <!--<string name="url_scheme">boopathytest</string>
+    // zoho
+    <string name="accounts_url">https://accounts.zoho.com</string>
+
+    <string name="c_id">1000.ZHWX305LOFY138647N4SIHX8ZUKXJR</string>
+    <string name="c_secret">f3ea1d099fed28245c617998d9f2ae7172827a7adb</string>
+    <string name="redir_url">boopathytest://</string>-->
+
+    <!--<string name="url_scheme">euzohosdk</string>
+    // zoho
+    <string name="accounts_url">https://accounts.zoho.eu</string>
+    <string name="c_id">1000.86KRTDWEOEK889124V239XJJUQSONX</string>
+    <string name="c_secret">2f8beb6aa14d09cfd1199f85e942f368502ec8183c</string>
+    <string name="redir_url">euzohosdk://</string>-->
+
+   <!-- <string name="url_scheme">cnzohosdk</string>
+    // zoho
+    <string name="accounts_url">https://accounts.zoho.com.cn</string>
+    <string name="c_id">1000.L9430EE66Q6097957FQ5ZQH3OJ1Q03</string>
+    <string name="c_secret">f6f2628662c0fd1e9e9f508f4abb978187e0528318</string>
+    <string name="redir_url">cnzohosdk://</string>-->
+z
+</resources>
