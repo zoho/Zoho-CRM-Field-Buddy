@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrm_field_buddy;
+package com.example.sruthi_4404.zcrmFieldBuddy;
 
 import android.content.ContentUris;
 import android.content.Context;

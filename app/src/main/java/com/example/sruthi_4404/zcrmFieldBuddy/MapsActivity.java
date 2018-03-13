@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrm_field_buddy;
+package com.example.sruthi_4404.zcrmFieldBuddy;
 
 import android.Manifest;
 import android.content.Intent;
@@ -14,8 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.sruthi_4404.zcrm_field_buddy.list.ListViewAdapter;
-import com.example.sruthi_4404.zcrm_field_buddy.list.TodaysAppointmentListActivity;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.ListViewAdapter;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.TodaysAppointmentListActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;

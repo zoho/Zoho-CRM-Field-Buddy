@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrm_field_buddy;
+package com.example.sruthi_4404.zcrmFieldBuddy;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,10 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.sruthi_4404.zcrm_field_buddy.list.CompletedAppointmentsListActivity;
-import com.example.sruthi_4404.zcrm_field_buddy.list.ContactListActivity;
-import com.example.sruthi_4404.zcrm_field_buddy.list.JobCardsListActivity;
-import com.example.sruthi_4404.zcrm_field_buddy.list.ListViewAdapter;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.CompletedAppointmentsListActivity;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.ContactListActivity;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.JobCardsListActivity;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.ListViewAdapter;
 import com.zoho.crm.sdk.android.zcrmandroid.activity.ZCRMBaseActivity;
 
 /**

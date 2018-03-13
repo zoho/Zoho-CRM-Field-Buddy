@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrm_field_buddy;
+package com.example.sruthi_4404.zcrmFieldBuddy;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -22,7 +22,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.sruthi_4404.zcrm_field_buddy.list.ListViewAdapter;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.ListViewAdapter;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.sdk.android.zcrmandroid.common.SDKCommonUtil;
 

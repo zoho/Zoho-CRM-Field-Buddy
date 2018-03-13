@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrm_field_buddy.list;
+package com.example.sruthi_4404.zcrmFieldBuddy.list;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.sruthi_4404.zcrm_field_buddy.MapsActivity;
-import com.example.sruthi_4404.zcrm_field_buddy.R;
+import com.example.sruthi_4404.zcrmFieldBuddy.MapsActivity;
+import com.example.sruthi_4404.zcrmFieldBuddy.R;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;
 import java.util.Iterator;

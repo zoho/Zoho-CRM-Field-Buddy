@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrm_field_buddy;
+package com.example.sruthi_4404.zcrmFieldBuddy;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
-import com.example.sruthi_4404.zcrm_field_buddy.list.ListViewAdapter;
+import com.example.sruthi_4404.zcrmFieldBuddy.list.ListViewAdapter;
 import com.zoho.crm.library.crud.ZCRMField;
 import com.zoho.crm.library.crud.ZCRMLayout;
 import com.zoho.crm.library.crud.ZCRMModule;

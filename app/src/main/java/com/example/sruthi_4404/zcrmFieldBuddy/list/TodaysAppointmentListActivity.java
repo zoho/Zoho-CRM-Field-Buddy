@@ -1,14 +1,18 @@
-package com.example.sruthi_4404.zcrm_field_buddy.list;
+package com.example.sruthi_4404.zcrmFieldBuddy.list;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.sruthi_4404.zcrm_field_buddy.R;
+import com.example.sruthi_4404.zcrmFieldBuddy.MapsActivity;
+import com.example.sruthi_4404.zcrmFieldBuddy.R;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;
 
@@ -18,7 +22,7 @@ import java.util.Iterator;
  * Created by sruthi-4404 on 05/10/17.
  */
 
-public class CompletedAppointmentsListActivity extends ListViewHandler{
+public class TodaysAppointmentListActivity extends ListViewHandler{
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -60,9 +64,9 @@ public class CompletedAppointmentsListActivity extends ListViewHandler{
             ZCRMRecord record = ListViewAdapter.storeList.get(position);
 
             try {
-                TextView name = rowView.findViewById(R.id.textView7);
-                name.setText( String.valueOf(record.getFieldValue("Name"))); //No I18N
-                TextView contact = rowView.findViewById(R.id.textView8);
+                TextView name = (TextView) rowView.findViewById(R.id.textView7);
+                name.setText(String.valueOf(record.getFieldValue("Name"))); //No I18N
+                TextView contact = (TextView) rowView.findViewById(R.id.textView8);
                 contact.setText(((ZCRMRecord)record.getFieldValue("Contact")).getLookupLabel());
             } catch (ZCRMException e) {
                 e.printStackTrace();
@@ -72,4 +76,23 @@ public class CompletedAppointmentsListActivity extends ListViewHandler{
         }
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Take appropriate action for each action item click
+        switch (item.getItemId()) {
+            case R.id.map:
+                Intent loadMap = new Intent(getApplicationContext(), MapsActivity.class);
+                startActivity(loadMap);
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.list_page, menu);
+        return true;
+    }
 }
