@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrmFieldBuddy.list;
+package com.zoho.crm_field_buddy.list;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -12,10 +12,10 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.sruthi_4404.zcrmFieldBuddy.AppointmentsViewHandler;
-import com.example.sruthi_4404.zcrmFieldBuddy.JobCardsViewHandler;
+import com.zoho.crm_field_buddy.AppointmentsViewHandler;
+import com.zoho.crm_field_buddy.JobCardsViewHandler;
 import com.example.sruthi_4404.zcrmFieldBuddy.R;
-import com.example.sruthi_4404.zcrmFieldBuddy.RecordViewHandler;
+import com.zoho.crm_field_buddy.RecordViewHandler;
 import com.zoho.crm.library.crud.ZCRMModule;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;

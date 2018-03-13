@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrmFieldBuddy;
+package com.zoho.crm_field_buddy;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,7 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.sruthi_4404.zcrmFieldBuddy.list.ListViewAdapter;
+import com.example.sruthi_4404.zcrmFieldBuddy.R;
+import com.zoho.crm_field_buddy.list.ListViewAdapter;
 import com.zoho.crm.library.crud.ZCRMModule;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;

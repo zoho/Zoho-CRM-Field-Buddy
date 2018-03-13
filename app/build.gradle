@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.example.sruthi_4404.zcrm_field_buddy"
+        applicationId "com.crm.crm_field_buddy"
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1

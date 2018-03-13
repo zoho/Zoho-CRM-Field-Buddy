@@ -1,10 +1,11 @@
-package com.example.sruthi_4404.zcrmFieldBuddy;
+package com.zoho.crm_field_buddy;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.sruthi_4404.zcrmFieldBuddy.R;
 import com.zoho.crm.sdk.android.zcrmandroid.activity.ZCRMLoginActivity;
 
 /**

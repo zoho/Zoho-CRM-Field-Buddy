@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrmFieldBuddy;
+package com.zoho.crm_field_buddy;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;

@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrmFieldBuddy.list;
+package com.zoho.crm_field_buddy.list;
 
 import android.widget.ArrayAdapter;
 import android.widget.ListView;

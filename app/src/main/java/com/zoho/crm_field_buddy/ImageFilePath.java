@@ -1,4 +1,4 @@
-package com.example.sruthi_4404.zcrmFieldBuddy;
+package com.zoho.crm_field_buddy;
 
 import android.content.ContentUris;
 import android.content.Context;

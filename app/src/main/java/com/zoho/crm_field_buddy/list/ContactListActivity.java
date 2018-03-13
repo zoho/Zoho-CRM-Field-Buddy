@@ -1,28 +1,28 @@
-package com.example.sruthi_4404.zcrmFieldBuddy.list;
+package com.zoho.crm_field_buddy.list;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.sruthi_4404.zcrmFieldBuddy.MapsActivity;
+import com.zoho.crm_field_buddy.MapsActivity;
 import com.example.sruthi_4404.zcrmFieldBuddy.R;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;
-
 import java.util.Iterator;
 
 /**
  * Created by sruthi-4404 on 05/10/17.
  */
 
-public class TodaysAppointmentListActivity extends ListViewHandler{
+public class ContactListActivity extends ListViewHandler{
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -48,7 +48,7 @@ public class TodaysAppointmentListActivity extends ListViewHandler{
         private final Activity context;
         public RecordListAdapter(Activity context)
         {
-            super( context, R.layout.list_item, ListViewAdapter.storeList);
+            super( context, R.layout.list_item_with_image, ListViewAdapter.storeList);
             this.context = context;
         }
 
@@ -58,16 +58,22 @@ public class TodaysAppointmentListActivity extends ListViewHandler{
 
             if (rowView == null)
             {
-                rowView = context.getLayoutInflater().inflate(R.layout.list_item, parent, false);
+                rowView = context.getLayoutInflater().inflate(R.layout.list_item_with_image, parent, false);
             }
 
             ZCRMRecord record = ListViewAdapter.storeList.get(position);
 
             try {
-                TextView name = (TextView) rowView.findViewById(R.id.textView7);
-                name.setText(String.valueOf(record.getFieldValue("Name"))); //No I18N
-                TextView contact = (TextView) rowView.findViewById(R.id.textView8);
-                contact.setText(((ZCRMRecord)record.getFieldValue("Contact")).getLookupLabel());
+                ImageView contactImage = rowView.findViewById(R.id.imageView);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    contactImage.setImageResource(R.mipmap.ic_user_icon);
+                }
+                TextView name = rowView.findViewById(R.id.textView4);
+                name.setText( String.valueOf(record.getFieldValue("Full_Name")));
+                TextView phone = rowView.findViewById(R.id.textView5);
+                phone.setText((CharSequence) record.getFieldValue("Email"));
+                TextView email = rowView.findViewById(R.id.textView6);
+                email.setText((CharSequence) record.getFieldValue("Mobile"));
             } catch (ZCRMException e) {
                 e.printStackTrace();
             }
@@ -89,10 +95,4 @@ public class TodaysAppointmentListActivity extends ListViewHandler{
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        getMenuInflater().inflate(R.menu.list_page, menu);
-        return true;
-    }
 }
