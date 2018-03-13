@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.crm.crm_field_buddy.R;
+import com.zoho.crm_field_buddy.R;
 import com.zoho.crm_field_buddy.MapsActivity;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;

@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.crm.crm_field_buddy.R;
+import com.zoho.crm_field_buddy.R;
 import com.zoho.crm_field_buddy.list.CompletedAppointmentsListActivity;
 import com.zoho.crm_field_buddy.list.ContactListActivity;
 import com.zoho.crm_field_buddy.list.JobCardsListActivity;

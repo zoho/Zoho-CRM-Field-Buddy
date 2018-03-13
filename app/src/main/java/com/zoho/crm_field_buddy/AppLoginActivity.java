@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.crm.crm_field_buddy.R;
+import com.zoho.crm_field_buddy.R;
 import com.zoho.crm.sdk.android.zcrmandroid.activity.ZCRMLoginActivity;
 
 /**
