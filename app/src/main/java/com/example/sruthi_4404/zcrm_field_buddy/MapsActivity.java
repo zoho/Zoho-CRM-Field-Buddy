@@ -244,7 +244,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         protected String doInBackground(String... params) {
             try {
                 ZCRMModule module = ZCRMRestClient.getInstance().getModuleInstance(ListViewAdapter.moduleAPIname);
-                ListViewAdapter.records = (List<ZCRMRecord>) module.getRecords(ListViewAdapter.cvID).getData();
+                ListViewAdapter.records = (List<ZCRMRecord>) module.getRecords(ListViewAdapter.cvID,null).getData();
                 resp = "success"; //No I18N
 
             } catch (Exception e) {

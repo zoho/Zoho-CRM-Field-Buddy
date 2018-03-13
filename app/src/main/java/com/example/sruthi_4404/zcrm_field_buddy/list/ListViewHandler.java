@@ -139,7 +139,7 @@ public class ListViewHandler extends AppCompatActivity {
         protected String doInBackground(String... params) {
             try {
                 ZCRMModule module = ZCRMRestClient.getInstance().getModuleInstance(ListViewAdapter.moduleAPIname);
-                ListViewAdapter.records = (List<ZCRMRecord>) module.getRecords(ListViewAdapter.cvID).getData();
+                ListViewAdapter.records = (List<ZCRMRecord>) module.getRecords(ListViewAdapter.cvID,null).getData();
                 resp = "success";
 
             } catch (Exception e) {
