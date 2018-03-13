@@ -10,5 +10,5 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sruthi_4404.zcrmFieldBuddy.com.zoho.crm_field_buddy.MapsActivity" />
+    tools:context="com.zoho.crm_field_buddy.MapsActivity" />
     </LinearLayout>

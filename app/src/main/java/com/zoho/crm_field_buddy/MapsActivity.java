@@ -14,7 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.sruthi_4404.zcrmFieldBuddy.R;
+import com.crm.crm_field_buddy.R;
 import com.zoho.crm_field_buddy.list.ListViewAdapter;
 import com.zoho.crm_field_buddy.list.TodaysAppointmentListActivity;
 import com.google.android.gms.common.ConnectionResult;
