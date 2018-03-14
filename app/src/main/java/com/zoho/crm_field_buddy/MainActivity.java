@@ -9,11 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.zoho.crm_field_buddy.R;
-import com.zoho.crm_field_buddy.list.CompletedAppointmentsListActivity;
-import com.zoho.crm_field_buddy.list.ContactListActivity;
-import com.zoho.crm_field_buddy.list.JobCardsListActivity;
-import com.zoho.crm_field_buddy.list.ListViewAdapter;
+import com.zoho.crm_field_buddy.listActivity.CompletedAppointmentsListActivity;
+import com.zoho.crm_field_buddy.listActivity.ContactListActivity;
+import com.zoho.crm_field_buddy.listActivity.JobCardsListActivity;
+import com.zoho.crm_field_buddy.listActivity.ListViewAdapter;
 import com.zoho.crm.sdk.android.zcrmandroid.activity.ZCRMBaseActivity;
 
 /**

@@ -10,8 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.zoho.crm_field_buddy.R;
-import com.zoho.crm_field_buddy.list.ListViewAdapter;
+import com.zoho.crm_field_buddy.listActivity.ListViewAdapter;
 import com.zoho.crm.library.crud.ZCRMModule;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;

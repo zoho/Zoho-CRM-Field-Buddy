@@ -9,8 +9,7 @@ import android.view.MenuItem;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
-import com.zoho.crm_field_buddy.R;
-import com.zoho.crm_field_buddy.list.ListViewAdapter;
+import com.zoho.crm_field_buddy.listActivity.ListViewAdapter;
 import com.zoho.crm.library.crud.ZCRMField;
 import com.zoho.crm.library.crud.ZCRMLayout;
 import com.zoho.crm.library.crud.ZCRMModule;

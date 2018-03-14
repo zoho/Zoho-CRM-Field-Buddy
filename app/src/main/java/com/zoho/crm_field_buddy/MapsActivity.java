@@ -14,9 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.zoho.crm_field_buddy.R;
-import com.zoho.crm_field_buddy.list.ListViewAdapter;
-import com.zoho.crm_field_buddy.list.TodaysAppointmentListActivity;
+import com.zoho.crm_field_buddy.listActivity.ListViewAdapter;
+import com.zoho.crm_field_buddy.listActivity.TodaysAppointmentListActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
