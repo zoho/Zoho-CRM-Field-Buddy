@@ -24,32 +24,32 @@
             android:value="AIzaSyCs4xHU0_35TntKXGK2YF8VgFhPSYSZhgc" />
 
         <activity
-            android:name="com.zoho.crm_field_buddy.MapsActivity"
+            android:name=".MapsActivity"
             android:label="@string/title_activity_maps"/>
         <activity
-            android:name="com.zoho.crm_field_buddy.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
         </activity>
-        <activity android:name="com.zoho.crm_field_buddy.listActivity.ContactListActivity"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.RecordViewHandler"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.listActivity.TodaysAppointmentListActivity"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.listActivity.CompletedAppointmentsListActivity"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.listActivity.JobCardsListActivity"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.AppointmentsViewHandler"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.JobCardsViewHandler"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
-        <activity android:name="com.zoho.crm_field_buddy.JobCardsCreation"
-            android:parentActivityName="com.zoho.crm_field_buddy.MainActivity"/>
+        <activity android:name=".listActivity.ContactListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RecordViewHandler"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".listActivity.TodaysAppointmentListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".listActivity.CompletedAppointmentsListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".listActivity.JobCardsListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AppointmentsViewHandler"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".JobCardsViewHandler"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".JobCardsCreation"
+            android:parentActivityName=".MainActivity"/>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.zoho.crm_field_buddy.MainActivity" />
+            android:value=".MainActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
