@@ -1,4 +1,4 @@
-package com.zoho.crm_field_buddy.list;
+package com.zoho.crm_field_buddy.listActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,10 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.zoho.crm_field_buddy.R;
 import com.zoho.crm.library.crud.ZCRMRecord;
 import com.zoho.crm.library.exception.ZCRMException;
-import com.zoho.crm.sdk.android.zcrmandroid.common.SDKCommonUtil;
+import com.zoho.crm_field_buddy.R;
 
 import java.util.Iterator;
 
@@ -19,7 +18,7 @@ import java.util.Iterator;
  * Created by sruthi-4404 on 05/10/17.
  */
 
-public class JobCardsListActivity extends ListViewHandler{
+public class CompletedAppointmentsListActivity extends ListViewHandler{
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -61,13 +60,11 @@ public class JobCardsListActivity extends ListViewHandler{
             ZCRMRecord record = ListViewAdapter.storeList.get(position);
 
             try {
-                TextView subj = rowView.findViewById(R.id.textView7);
-                subj.setText( String.valueOf(record.getFieldValue("Name"))); //No I18N
-                TextView appointment = rowView.findViewById(R.id.textView8);
-                appointment.setText(((ZCRMRecord)record.getFieldValue("Appointment")).getLookupLabel());
-                TextView visit = rowView.findViewById(R.id.textView9);
-                visit.setText(SDKCommonUtil.isoStringToGMTTimestamp(String.valueOf(record.getFieldValue("Visit_Time"))).toString()); //No I18N
-            } catch (Exception e) {
+                TextView name = rowView.findViewById(R.id.textView7);
+                name.setText( String.valueOf(record.getFieldValue("Name"))); //No I18N
+                TextView contact = rowView.findViewById(R.id.textView8);
+                contact.setText(((ZCRMRecord)record.getFieldValue("Contact")).getLookupLabel());
+            } catch (ZCRMException e) {
                 e.printStackTrace();
             }
 

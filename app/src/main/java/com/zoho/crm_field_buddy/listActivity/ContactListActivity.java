@@ -1,4 +1,4 @@
-package com.zoho.crm_field_buddy.list;
+package com.zoho.crm_field_buddy.listActivity;
 
 import android.app.Activity;
 import android.content.Intent;
