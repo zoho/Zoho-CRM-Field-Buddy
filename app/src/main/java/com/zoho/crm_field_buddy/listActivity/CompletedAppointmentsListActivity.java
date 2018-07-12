@@ -63,7 +63,11 @@ public class CompletedAppointmentsListActivity extends ListViewHandler{
                 TextView name = rowView.findViewById(R.id.textView7);
                 name.setText( String.valueOf(record.getFieldValue("Name"))); //No I18N
                 TextView contact = rowView.findViewById(R.id.textView8);
-                contact.setText(((ZCRMRecord)record.getFieldValue("Contact")).getLookupLabel());
+                if(((ZCRMRecord)record.getFieldValue("Contact"))!=null) {
+                    contact.setText(((ZCRMRecord) record.getFieldValue("Contact")).getLookupLabel());
+                }else {
+                    contact.setText("---");
+                }
             } catch (ZCRMException e) {
                 e.printStackTrace();
             }

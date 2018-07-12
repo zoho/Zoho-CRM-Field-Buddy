@@ -221,6 +221,7 @@ public class JobCardsCreation extends AppCompatActivity
 
 			} catch (Exception e)
 			{
+				dialog.dismiss();
 				e.printStackTrace();
 				resp = e.getMessage();
 			}
